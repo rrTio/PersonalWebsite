@@ -1,3 +1,5 @@
+html{scroll-behavior: smooth;}
+
 .hoverable {
   display: inline-block;
   backface-visibility: hidden;
@@ -97,7 +99,8 @@ nav li a {
 }
 
 .lead{
-  font-weight: bold;
+  font-weight: 100;
+  font-family: 'orbitron', sans-serif;
 }
 
 .navbar{
@@ -109,3 +112,56 @@ nav li a {
   font-size: 40px;
   margin-bottom: -10px;
 }
+
+#samplesHeader{
+  font-family: 'orbitron', sans-serif;
+}
+
+
+main {
+	display: flex;
+	 
+	width: 100vw;
+	height: 100vh;
+}
+/*--------------------*\
+	component card
+\*--------------------*/
+.Card {
+	display: flex;
+	justify-content: center;
+	
+	margin: auto;
+	width: 48rem;
+	min-height: 26rem;
+}
+	.Card-image {
+		flex-basis: 60%;
+		background-image: 
+			url(../../images/aboutMe2.PNG);
+		background-position:top;
+		background-size: cover;
+		background-repeat: no-repeat;
+    height: 400px;
+	}
+	.Card-body {
+		--margin: 2em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-basis: 60%;
+		
+		margin-top: var(--margin);
+		margin-bottom: var(--margin);
+		margin-left: -4em;
+		padding: 0 1.4em;
+		background-color: #fff;
+		box-shadow: rgba(0,0,0,.2) 0 .2em .2em;
+	}
+	.Card-title { 
+    
+		margin-bottom: .4em; 
+		text-transform: uppercase;
+	}
+	.Card-title,
+	.Card-description { margin: 0; color: black;}
