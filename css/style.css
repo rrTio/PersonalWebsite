@@ -107,4 +107,5 @@ nav li a {
 #headerTitle{
   font-family: 'orbitron', sans-serif;
   font-size: 40px;
+  margin-bottom: -10px;
 }
