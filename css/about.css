@@ -17,13 +17,16 @@ main {
 }
 	.Card-image {
 		flex-basis: 60%;
-		background-image: 
-			url(../../images/aboutMe2.PNG);
 		background-position:top;
 		background-size: cover;
 		background-repeat: no-repeat;
     height: 400px;
 	}
+
+    #image{
+        width: 100%;
+        height: 100%;
+    }
 	.Card-body {
 		--margin: 2em;
 		display: flex;
