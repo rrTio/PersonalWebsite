@@ -11,10 +11,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
   <script src="scripts/script.js"></script>  
+  <link rel="stylesheet" href="css/horizontalScroll.css"/>
 </head>
 
 <body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <!--NAVIGATION BAR START-->
+
   <div class="container-fluid">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
@@ -40,6 +44,8 @@
     </div>
   </div>
 
+  <!--END-->
+  <!--ABOUT ME START-->
   <div class="about">
     <link rel="stylesheet" href="css/about.css"/>
     <main id="about">
@@ -62,40 +68,28 @@
     </main>
   </div>
 
-  <div class="horizontal-slider-container" id="SAMPLES">
-    <link rel="stylesheet" href="css/horizontalScroll.css"/>
-    <h1 id="samplesHeader">SAMPLES</h1>
-    
-    <ul class="horizonal-slider">
-      <li class="item"><a><img src="images/MP1Image.JPG" width="100%"></a></li>
-      <li class="item">test2</li>
-      <li class="item">test3</li>
-      <li class="item">test4</li>
-      <li class="item">test5</li>
-      <li class="item">test6</li>
-    </ul>
-  </div>
-
   <!--END-->
-
+  <!--SLIDER START-->
   <div class="slider">
-  <div class="slide_viewer">
-    <div class="slide_group">
-      <div class="slide">
-        <img id="imageSlide" src="images/MP1Image.JPG" width=55%/>
-      </div>
-      <div class="slide">
-        <img id="imageSlide" src="images/MP2Image.JPG" width=53%/>
-      </div>
-      <div class="slide">
-        <img id="imageSlide" src="images/MP3Image.JPG" width=54%/>
-      </div>
-      <div class="slide">
-        <img id="imageSlide" src="images/MP3Image.JPG" width=54%/>
+    <h1 id="samplesHeader">SAMPLES</h1>
+    <div class="slide_viewer">
+      <div class="slide_group">
+        <div class="slide">
+          <img id="imageSlide" src="images/MP1Image.JPG" width=55%/>
+        </div>
+        <div class="slide">
+          <img id="imageSlide" src="images/MP2Image.JPG" width=53%/>
+        </div>
+        <div class="slide">
+          <img id="imageSlide" src="images/MP3Image.JPG" width=54%/>
+        </div>
+        <div class="slide">
+          <img id="imageSlide" src="images/MP3Image.JPG" width=54%/>
+        </div>
       </div>
     </div>
   </div>
-</div><!-- End // .slider -->
+  <!-- End // .slider -->
 
 <div class="slide_buttons">
 </div>
