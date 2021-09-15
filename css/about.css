@@ -47,4 +47,14 @@ main {
 		text-transform: uppercase;
 	}
 	.Card-title,
-	.Card-description { margin: 0; color: black;}
+	.Card-description { 
+		margin: 0; 
+		color: 
+		black;
+		-webkit-touch-callout: none;
+  	-webkit-user-select: none;
+  	-khtml-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+	}
