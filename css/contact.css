@@ -10,11 +10,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #051321;
-  font-family: "Roboto Condensed", sans-serif;
-}
-
 /* CONTACT
 ========================================== */
 .contact-area {
@@ -32,9 +27,6 @@ body {
   text-align: left;
 }
 
-#span{
-  margin-left: 20%;
-}
 @media (min-width: 1024px) {
   .contact {
     position: absolute;
@@ -322,8 +314,8 @@ body {
 }
 .contact nav a .icon {
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 20px;
