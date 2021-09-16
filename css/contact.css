@@ -30,7 +30,7 @@
 @media (min-width: 1024px) {
   .contact {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
