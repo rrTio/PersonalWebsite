@@ -1,60 +1,77 @@
-main {
-	display: flex;
-	 
-	width: 100vw;
-	height: 100vh;
+#about {
+  background-color: #07374a;
 }
-/*--------------------*\
-	component card
-\*--------------------*/
-.Card {
-	display: flex;
-	justify-content: center;
+#about h2 {
+  color: #25b79f;
+}
+
+.profile-img {
+  margin-bottom: 15px;
+  width: 40%;
+}
+
+.about,
+.about-info,
+.about-tools,
+.about-last {
+  padding: 4% 10% 1% 10%;
+  font-size: 1.25em;
+margin-right: 0!important;
 	
-	margin: auto;
-	width: 48rem;
-	min-height: 26rem;
 }
-	.Card-image {
-		flex-basis: 60%;
-		background-position:top;
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+.about-tools ul li,
+.contact-social-icons ul a li {
+  text-align: center;
+}
 
-    #image{
-        width: 100%;
-        height: 100%;
-    }
+.about-tools {
+  padding-top: 4.375em;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  .about-tools {
+    padding-top: 5.625em;
+  }
+}
+.about-tools ul:first-child {
+  padding-left: 0px;
+}
+.about-tools ul {
+  color: #25b79f;
+  list-style: none;
+}
+.about-tools ul li {
+  padding-top: 0.75em;
+}
+.about-last {
+  padding-top: 3.125em;
+  padding-bottom: 0;
+  font-size: 1.125em;
+}
+@media screen and (min-width: 768px) {
+  .about-last {
+    padding-top: 0;
+  }
+}
+.about-last p {
+  color: #25b79f;
+}
 
-	.Card-body {
-		--margin: 2em;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex-basis: 60%;
-		
-		margin-top: var(--margin);
-		margin-bottom: var(--margin);
-		margin-left: -4em;
-		padding: 0 1.4em;
-		background-color: #ffffff;
-		box-shadow: rgba(0,0,0,.2) 0 .2em .2em;
-	}
-	.Card-title { 
-    
-		margin-bottom: .4em; 
-		text-transform: uppercase;
-	}
-	.Card-title,
-	.Card-description { 
-		margin: 0; 
-		color: 
-		black;
-		-webkit-touch-callout: none;
-  	-webkit-user-select: none;
-  	-khtml-user-select: none;
-  	-moz-user-select: none;
-  	-ms-user-select: none;
-  	user-select: none;
-	}
+.cover {
+  padding: 2% 0 2% 0;
+}
+.cover.top {
+  padding: 15% 0 10% 0;
+  height: 100vh;
+  display: flex;
+  background-color: #25b79f;
+}
+.cover.bottom {
+  padding: 10% 0 10% 0;
+}
+
+.row{
+	margin-right: 0!important;
+}

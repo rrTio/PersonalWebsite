@@ -1,4 +1,13 @@
-/*END*/
+
+#samplesHeader{
+  font-family: 'orbitron', sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .slider {
   margin: 0 auto;
@@ -32,19 +41,19 @@
 }
 
 .slide:nth-of-type(1) {
-  background: #000000;
+  background: #629405;
 }
 
 .slide:nth-of-type(2) {
-  background: #000000;
+  background: #08f17d;
 }
 
 .slide:nth-of-type(3) {
-  background: #000000;
+  background: #9c07c9;
 }
 
 .slide:nth-of-type(4) {
-  background: #000000;
+  background: #cfa531;
 }
 
 .slide_buttons {
