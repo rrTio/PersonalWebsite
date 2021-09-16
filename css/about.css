@@ -23,6 +23,12 @@ margin-right: 0!important;
 .about-tools ul li,
 .contact-social-icons ul a li {
   text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about-tools {
@@ -75,4 +81,14 @@ margin-right: 0!important;
 
 .row{
 	margin-right: 0!important;
+}
+
+
+.text-center {
+	-webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
