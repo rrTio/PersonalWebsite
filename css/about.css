@@ -10,7 +10,9 @@
   width: 40%;
 }
 
-.about-info{margin-left: 25px;}
+.about-info{
+  padding-left: 50%;
+}
 
 .about,
 .about-info,
