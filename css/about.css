@@ -16,8 +16,7 @@
 .about-last {
   padding: 4% 10% 1% 10%;
   font-size: 1.25em;
-margin-right: 0!important;
-	
+  margin-right: 0!important;
 }
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
 .about-tools ul li,
@@ -81,7 +80,6 @@ margin-right: 0!important;
 
 .row{
 	margin-right: 0!important;
-  margin-left: 1%;
 }
 
 .text-center {
