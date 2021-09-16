@@ -25,10 +25,15 @@ body {
 
 .contact {
   position: relative;
-  max-width: 420px;
+  max-width: 450px;
   padding: 40px 20px;
   overflow: hidden;
   margin: 0 auto;
+  text-align: left;
+}
+
+.contact span{
+  margin-left: 20%;
 }
 @media (min-width: 1024px) {
   .contact {
