@@ -14,11 +14,12 @@
 ========================================== */
 .contact-area {
   width: 100%;
-  height: 140vh;
+  height: 100vh;
   position: relative;
 }
 
 .contact {
+  top: 20%;
   position: relative;
   max-width: 450px;
   padding: 40px 20px;
@@ -45,6 +46,7 @@
   position: relative;
   text-align: center;
 }
+
 @media (min-width: 414px) {
   .contact main section .content {
     text-align: left;
