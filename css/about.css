@@ -8,7 +8,6 @@
 .profile-img {
   margin-bottom: 15px;
   width: 40%;
-  border: 2px solid black;
 }
 
 .about-info{
@@ -49,7 +48,7 @@
   padding-left: 0px;
 }
 .about-tools ul {
-  color: #25b79f;
+  color: #00ff88;
   list-style: none;
 }
 .about-tools ul li {
@@ -88,6 +87,7 @@
 }
 
 .text-center {
+  color: #25b79f;
 	-webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
