@@ -21,7 +21,7 @@
 
 .contact {
   position: relative;
-  max-width: 450px;
+  max-width: 800px;
   padding: 40px 20px;
   overflow: hidden;
   margin: 0 auto;
@@ -220,6 +220,7 @@
 }
 .contact nav.active {
   max-height: 700px;
+  margin-bottom: 20%; 
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s;
@@ -311,8 +312,8 @@
 
 .contact nav a .icon {
   float: left;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   overflow: hidden;
   margin-right: 20px;
@@ -328,7 +329,7 @@
 .contact nav a .content h1 {
   font-size: 20px;
   font-weight: 400;
-  line-height: 160%;
+  line-height: 80%;
   letter-spacing: 0.4px;
 }
 .contact nav a .content span {
@@ -336,4 +337,9 @@
   color: #b3b3b3;
   display: block;
   letter-spacing: 0.4px;
+}
+
+#contactMessage{
+  font-family: 'Orbitron';
+  font-size: 20px;
 }

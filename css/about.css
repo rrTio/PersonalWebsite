@@ -95,4 +95,16 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  font-family: 'Orbitron';
+}
+
+#aboutHeader{
+  font-family: 'Orbitron';
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+#infoTextCenter{
+  font-family: 'Orbitron';
+  text-transform: uppercase;
 }
