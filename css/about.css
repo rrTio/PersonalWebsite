@@ -1,5 +1,6 @@
 #about {
   background-color: #07374a;
+  height: 120vh;
 }
 #about h2 {
   color: #25b79f;
@@ -107,4 +108,14 @@
 #infoTextCenter{
   font-family: 'Orbitron';
   text-transform: uppercase;
+}
+
+#checkBio{
+  text-decoration: none;
+  color: #25b79f;
+}
+
+#checkBio:hover{
+  text-decoration: underline;
+  color:#ffffff;
 }
