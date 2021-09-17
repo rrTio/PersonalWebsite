@@ -13,13 +13,13 @@
 /* CONTACT
 ========================================== */
 .contact-area {
+  margin-top: -10%;
   width: 100%;
   height: 100vh;
   position: relative;
 }
 
 .contact {
-  top: 20%;
   position: relative;
   max-width: 450px;
   padding: 40px 20px;
