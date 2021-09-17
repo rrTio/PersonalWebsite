@@ -8,6 +8,7 @@
 .profile-img {
   margin-bottom: 15px;
   width: 40%;
+  border: 2px solid black;
 }
 
 .about-info{
