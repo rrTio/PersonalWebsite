@@ -136,7 +136,7 @@
   bottom: 0;
   right: 50%;
   background-color: #ffbe44;
-  color: #c63535;
+  color: #20b6e4;
   border: 0;
   width: 200px;
   height: 48px;
@@ -185,7 +185,7 @@
   transition: all 0.4s;
 }
 .contact main button svg path {
-  fill: #c63535;
+  fill: #20b6e4;
 }
 .contact main button.active {
   margin-right: 0;

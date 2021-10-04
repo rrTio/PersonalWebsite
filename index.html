@@ -1,337 +1,581 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
     <title>THE REVERIE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/scrollbar.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap"rel="stylesheet"/>
-    <script src="scripts/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed"/>
-    <link rel="stylesheet" href="css/contact.css" />
-
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+    <link rel="stylesheet" href="assets/css/scrollbar.css" />
+    <link rel="icon" href="images/profile.png" />
+    
   </head>
 
-  <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!--NAVIGATION BAR START-->
-    <div class="container-fluid">
-      <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-          <ul class="nav navbar-nav">
-            <li><a id="len1" class="hoverable bounce" href="#">Home</a></li>
+  <body class="is-preload">
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"
+            ><img src="images/profile.png" alt="Rozs Raven"
+          /></span>
+          <h1 id="title">Rozs Raven Tio</h1>
+          <p>Computer Engineer</p>
+        </div>
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
             <li>
-              <a id="len2" class="hoverable bounce" href="#about">About</a>
+              <a href="#top" id="top-link"
+                ><span class="icon solid fa-home">Intro</span></a
+              >
             </li>
             <li>
-              <a id="len3" class="hoverable bounce" href="#slider">Creations</a>
+              <a href="#portfolio" id="portfolio-link"
+                ><span class="icon solid fa-th">Portfolio</span></a
+              >
             </li>
             <li>
-              <a id="len4" class="hoverable bounce" href="#contact">Contact</a>
+              <a href="#about" id="about-link"
+                ><span class="icon solid fa-user">About Me</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contact-link"
+                ><span class="icon solid fa-envelope">Contact</span></a
+              >
             </li>
           </ul>
-        </div>
-      </nav>
-      <div id="what-the-hell-is-this">
-        <div class="page-title">
-          <h1 id="headerTitle">THE REVERIE</h1>
-          <center>
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player
-              src="https://assets3.lottiefiles.com/packages/lf20_xsnsvpbs.json"
-              background="transparent"
-              speed="1"
-              style="width: 300px; height: 300px"
-              loop
-              autoplay
-            ></lottie-player>
-          </center>
-          <p class="lead">
-            WEB DEVELOPER + DESIGNER, PROGRAMMER, PHOTOGRAPHER & STUDENT<br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
-          </p>
-        </div>
+        </nav>
+      </div>
+      <div class="bottom">
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.facebook.com/rozsAMraven"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/RozsTio" class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/rozsraven/"
+              class="icon brands fa-instagram"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/rrTio" class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rozs-raven-g-tio-2ab173210/"
+              class="icon brands fab fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+        </ul>
       </div>
     </div>
-    <!--END-->
 
-    <!--===================================================================================================================-->
-
-    <!--SLIDER START-->
-    
-      
-
-    <!--END-->
-
-    <!--ABOUT ME START-->
-    <div id="about" class="row cover">
-      <center>
-        <link rel="stylesheet" href="css/about.css" />
-        <h2 class="text-center" id="aboutHeader">About Me</h2>
-        <div class="row">
-          <div class="col-md-6 text-center about-info">
-            <img
-              class="img-circle text-center profile-img"
-              src="images/profile.png"
-            />
-            <p class="text-center" id="infoTextCenter">
-              Hi, I'm Rozs Raven Tio and I'm a Web Developer, Designer, Programmer, Photographer & Student.
-            </p>
-          </div>
-          <div class="col-md-6 about-tools">
-            <p class="text-center">Here's a few of the tools I use</p>
-            <div class="col-xs-6">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Bootstrap</li>
-                <li>Java</li>
-                <li>C++</li>
-              </ul>
+    <!-- Main -->
+    <div id="main">
+      <!-- Intro -->
+      <section id="top" class="one dark cover">
+        <div class="container">
+          <header>
+            <center>
+              <!--<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+            		<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_xsnsvpbs.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>-->
+              <img src="images/profile.png" width="53%" />
+            </center>
+            <h2 class="alt">
+              Hi! I'm <strong>Rozs</strong>, your web designer.
+            </h2>
+            <p>Creating websites from mind to reality.</p>
+          </header>
+        </div>
+      </section>
+      <!-- Portfolio -->
+      <section id="portfolio" class="two">
+        <div class="container">
+          <header>
+            <h2>MACHINE PROBLEMS</h2>
+          </header>
+          <p id="portfolioText">
+            These are my coursework problems that are created and designed by
+            myself.
+          </p>
+          <div class="row" id="rowMargin">
+            <div class="col-md-6 col-12-mobile">
+              <div class="demo-content">
+                <center>
+                  <div class="column">
+                    <div class="card is-fullimage">
+                      <div class="card-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="images/firstMP.jpg"
+                            alt="Placeholder image"
+                          />
+                        </figure>
+                        <div class="card-stacked">
+                          <div class="card-content">
+                            <div class="media-content">
+                              <p class="title is-4">BIO-NOTE</p>
+                            </div>
+                            <div class="content">
+                              <a href="https://rrtio.github.io/BIO-NOTE/" target="_blank">WEB VIEW</a>
+                              <br />
+                              <a href="https://github.com/rrTio/BIO-NOTE" target="_blank">SOURCE CODE</a>
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              </div>
             </div>
-            <div class="col-xs-6">
-              <ul>
-                <li>JQuery</li>
-                <li>Git</li>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>Python</li>
-                <li>Android</li>
-              </ul>
+            <div class="col-md-6 col-12-mobile">
+              <div class="demo-content">
+                <center>
+                  <div class="column">
+                    <div class="card is-fullimage">
+                      <div class="card-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="images/secondMP.jpg"
+                            alt="Placeholder image"
+                          />
+                        </figure>
+                        <div class="card-stacked">
+                          <div class="card-content">
+                            <div class="media-content">
+                              <p class="title is-4">BIO-NOTE-WITH-CSS</p>
+                            </div>
+                            <div class="content">
+                              <a href="https://rrtio.github.io/BIO-NOTE-WITH-CSS/" target="_blank">WEB VIEW</a>
+                              <br />
+                              <a href="https://github.com/rrTio/BIO-NOTE-WITH-CSS" target="_blank">SOURCE CODE</a>
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              </div>
             </div>
-          </div>
-          <div class="row break">
-            <div class="col-md-12 about-last">
-              <a class="text-center" id="checkBio">
-                Check out my bio
-                <span class="glyphicon glyphicon-arrow-right"></span>
-              </a>
+            <div class="col-md-6 col-12-mobile">
+              <div class="demo-content">
+                <center>
+                  <div class="column">
+                    <div class="card is-fullimage">
+                      <div class="card-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="images/thirdMP.jpg"
+                            alt="Placeholder image"
+                          />
+                        </figure>
+                        <div class="card-stacked">
+                          <div class="card-content">
+                            <div class="media-content">
+                              <p class="title is-4">PORTFOLIO</p>
+                            </div>
+                            <div class="content">
+                              <a href="https://rrtio.github.io/NCP3106/" target="_blank">WEB VIEW</a>
+                              <br />
+                              <a href="https://github.com/rrTio/NCP3106" target="_blank">SOURCE CODE</a>
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              </div>
+            </div>
+            <div class="col-md-6 col-12-mobile">
+              <div class="demo-content">
+                <center>
+                  <div class="column">
+                    <div class="card is-fullimage">
+                      <div class="card-image">
+                        <figure class="image is-4by3">
+                          <img
+                            src="images/bodyDefense.png"
+                            alt="Placeholder image"
+                            height="235px"
+                          />
+                        </figure>
+                        <div class="card-stacked">
+                          <div class="card-content">
+                            <div class="media-content">
+                              <p class="title is-4">BODY DEFENSE GAME</p>
+                            </div>
+                            <div class="content">
+                              <br />
+                              <a href="https://github.com/rrTio/BODY-DEFENSE-PC">SOURCE CODE</a>
+                              <br />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </center>
+              </div>
             </div>
           </div>
         </div>
-      </center>
-    </div>
-    <!--END-->
+        <a href="portfolio.html" class="icon solid fa-border-all" id="portfolioLink">
+          VIEW MORE DESIGNS</a
+        >
+      </section>
+      <!-- About Me -->
+      <section id="about" class="three">
+        <div class="container">
+          <header>
+            <h2>About Me</h2>
+          </header>
+          <center>
+            <img
+              src="images/aboutMe4.png"
+              alt="Rozs Raven"
+              class="image featured"
+            />
+          </center>
+          <p>
+            I am currently a computer engineering student that has interests in creating and designing of 
+            websites. I am also a photographer and a programmer.
+          </p>
+          <p id="aboutMeP">
+            <a id="aboutMe" href="aboutMe.html">MORE INFO</a> →
+          </p>
+        </div>
+      </section>
+      <!--CONTACT ME START-->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        id="contact"
+        src="https://assets3.lottiefiles.com/packages/lf20_0bcwmnqu.json"
+        mode="bounce"
+        background="transparent"
+        speed="2"
+        style="width: 100%; height: 250px"
+        loop
+        autoplay
+      ></lottie-player>
+      <div class="contact-area">
+        <div class="contact">
+          <main>
+            <section>
+              <div class="content">
+                <img src="images/profile.png" alt="Profile Image" />
+                <aside>
+                  <h1 id="contactMessageH">Rozs Raven Tio</h1>
+                  <p id="contactMessageP">
+                    Need a web developer?<br />
+                    Contact me
+                  </p>
+                </aside>
 
-    <!--===================================================================================================================-->
-    
+                <button>
+                  <span id="btnText">Contact Me</span>
 
-    <!--===================================================================================================================-->
-    
-    <!--CONTACT ME START-->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <lottie-player id="contact" src="https://assets3.lottiefiles.com/packages/lf20_0bcwmnqu.json" mode="bounce" background="transparent"  speed="2"  style="width: 100%; height: 250px;"  loop  autoplay></lottie-player>
-    <div class="contact-area">
-      
-      <div class="contact">
-        <main>
-          <section>
-            <div class="content">
-              <img src="images/profile.png" alt="Profile Image" />
-
-              <aside>
-                <h1 id="contactMessage">Rozs Raven Tio</h1>
-                <p id="contactMessage">
-                  Hi, I'm Rozs Raven Tio and I'm a Web Developer, Designer,
-                  Programmer, Photographer & Student.
-                </p>
-              </aside>
-
-              <button>
-                <span>Contact Me</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 48 48"
+                  >
+                    <g class="nc-icon-wrapper" fill="#444444">
+                      <path
+                        d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
+              <div class="title"><p>Contact or Follow Me</p></div>
+            </section>
+          </main>
+          <nav>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=rozsraventio2305@gmail.com"
+              target="_blank"
+              class="gmail"
+            >
+              <div class="icon">
+                <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="content">
+                <h1>Gmail</h1>
+                <span id="span">rozsraventio2305</span>
+              </div>
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/rozs-raven-g-tio-2ab173210/"
+              target="_blank"
+              class="linkedin"
+            >
+              <div class="icon">
                 <svg
+                  width="256px"
+                  height="256px"
+                  viewBox="0 0 256 256"
+                  version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
                 >
-                  <g class="nc-icon-wrapper" fill="#444444">
+                  <g>
                     <path
-                      d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"
+                      d="M218.123122,218.127392 L180.191928,218.127392 L180.191928,158.724263 C180.191928,144.559023 179.939053,126.323993 160.463756,126.323993 C140.707926,126.323993 137.685284,141.757585 137.685284,157.692986 L137.685284,218.123441 L99.7540894,218.123441 L99.7540894,95.9665207 L136.168036,95.9665207 L136.168036,112.660562 L136.677736,112.660562 C144.102746,99.9650027 157.908637,92.3824528 172.605689,92.9280076 C211.050535,92.9280076 218.138927,118.216023 218.138927,151.114151 L218.123122,218.127392 Z M56.9550587,79.2685282 C44.7981969,79.2707099 34.9413443,69.4171797 34.9391618,57.260052 C34.93698,45.1029244 44.7902948,35.2458562 56.9471566,35.2436736 C69.1040185,35.2414916 78.9608713,45.0950217 78.963054,57.2521493 C78.9641017,63.090208 76.6459976,68.6895714 72.5186979,72.8184433 C68.3913982,76.9473153 62.7929898,79.26748 56.9550587,79.2685282 M75.9206558,218.127392 L37.94995,218.127392 L37.94995,95.9665207 L75.9206558,95.9665207 L75.9206558,218.127392 Z M237.033403,0.0182577091 L18.8895249,0.0182577091 C8.57959469,-0.0980923971 0.124827038,8.16056231 -0.001,18.4706066 L-0.001,237.524091 C0.120519052,247.839103 8.57460631,256.105934 18.8895249,255.9977 L237.033403,255.9977 C247.368728,256.125818 255.855922,247.859464 255.999,237.524091 L255.999,18.4548016 C255.851624,8.12438979 247.363742,-0.133792868 237.033403,0.000790807055"
+                      fill="#0A66C2"
                     ></path>
                   </g>
                 </svg>
-              </button>
-            </div>
-
-            <div class="title"><p>Contact or Follow Me</p></div>
-          </section>
-        </main>
-
-        <nav>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rozsraventio2305@gmail.com" target="_blank" class="gmail">
-            <div class="icon">
-              <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 3v10c0 .567-.433 1-1 1h-1V4.925L8 9.233 2 4.925V14H1c-.567 0-1-.433-1-1V3c0-.283.108-.533.287-.712C.467 2.107.718 2 1 2h.333L8 6.833 14.667 2H15c.283 0 .533.108.713.288.179.179.287.429.287.712z" fill-rule="evenodd"/>
-              </svg>
-            </div>
-
-            <div class="content">
-              <h1>Email</h1>
-              <span id="span">rozsraventio2305@gmail.com</span>
-            </div>
-
-            <svg
-              class="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-            >
-              <g class="nc-icon-wrapper" fill="#444444">
-                <path
-                  d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
-                ></path>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://github.com/rrTio" target="_blank" class="github">
-            <div class="icon">
-              <svg width="256px" height="250px" viewBox="0 0 256 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z" fill="#161614"></path>
+              </div>
+              <div class="content">
+                <h1>LinkedIn</h1>
+                <span id="span">Rozs Raven G. Tio</span>
+              </div>
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
                 </g>
               </svg>
-            </div>
-
-            <div class="content">
-              <h1>GITHUB</h1>
-              <span id="span">rrTio</span>
-            </div>
-
-            <svg
-              class="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-            >
-              <g class="nc-icon-wrapper" fill="#444444">
-                <path
-                  d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
-                ></path>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://www.facebook.com/rozsAMraven/" target="_blank" class="facebook">
-            <div class="icon">
+            </a>
+            <a href="https://github.com/rrTio" target="_blank" class="github">
+              <div class="icon">
+                <svg
+                  width="256px"
+                  height="250px"
+                  viewBox="0 0 256 250"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
+                >
+                  <g>
+                    <path
+                      d="M128.00106,0 C57.3172926,0 0,57.3066942 0,128.00106 C0,184.555281 36.6761997,232.535542 87.534937,249.460899 C93.9320223,250.645779 96.280588,246.684165 96.280588,243.303333 C96.280588,240.251045 96.1618878,230.167899 96.106777,219.472176 C60.4967585,227.215235 52.9826207,204.369712 52.9826207,204.369712 C47.1599584,189.574598 38.770408,185.640538 38.770408,185.640538 C27.1568785,177.696113 39.6458206,177.859325 39.6458206,177.859325 C52.4993419,178.762293 59.267365,191.04987 59.267365,191.04987 C70.6837675,210.618423 89.2115753,204.961093 96.5158685,201.690482 C97.6647155,193.417512 100.981959,187.77078 104.642583,184.574357 C76.211799,181.33766 46.324819,170.362144 46.324819,121.315702 C46.324819,107.340889 51.3250588,95.9223682 59.5132437,86.9583937 C58.1842268,83.7344152 53.8029229,70.715562 60.7532354,53.0843636 C60.7532354,53.0843636 71.5019501,49.6441813 95.9626412,66.2049595 C106.172967,63.368876 117.123047,61.9465949 128.00106,61.8978432 C138.879073,61.9465949 149.837632,63.368876 160.067033,66.2049595 C184.49805,49.6441813 195.231926,53.0843636 195.231926,53.0843636 C202.199197,70.715562 197.815773,83.7344152 196.486756,86.9583937 C204.694018,95.9223682 209.660343,107.340889 209.660343,121.315702 C209.660343,170.478725 179.716133,181.303747 151.213281,184.472614 C155.80443,188.444828 159.895342,196.234518 159.895342,208.176593 C159.895342,225.303317 159.746968,239.087361 159.746968,243.303333 C159.746968,246.709601 162.05102,250.70089 168.53925,249.443941 C219.370432,232.499507 256,184.536204 256,128.00106 C256,57.3066942 198.691187,0 128.00106,0 Z M47.9405593,182.340212 C47.6586465,182.976105 46.6581745,183.166873 45.7467277,182.730227 C44.8183235,182.312656 44.2968914,181.445722 44.5978808,180.80771 C44.8734344,180.152739 45.876026,179.97045 46.8023103,180.409216 C47.7328342,180.826786 48.2627451,181.702199 47.9405593,182.340212 Z M54.2367892,187.958254 C53.6263318,188.524199 52.4329723,188.261363 51.6232682,187.366874 C50.7860088,186.474504 50.6291553,185.281144 51.2480912,184.70672 C51.8776254,184.140775 53.0349512,184.405731 53.8743302,185.298101 C54.7115892,186.201069 54.8748019,187.38595 54.2367892,187.958254 Z M58.5562413,195.146347 C57.7719732,195.691096 56.4895886,195.180261 55.6968417,194.042013 C54.9125733,192.903764 54.9125733,191.538713 55.713799,190.991845 C56.5086651,190.444977 57.7719732,190.936735 58.5753181,192.066505 C59.3574669,193.22383 59.3574669,194.58888 58.5562413,195.146347 Z M65.8613592,203.471174 C65.1597571,204.244846 63.6654083,204.03712 62.5716717,202.981538 C61.4524999,201.94927 61.1409122,200.484596 61.8446341,199.710926 C62.5547146,198.935137 64.0575422,199.15346 65.1597571,200.200564 C66.2704506,201.230712 66.6095936,202.705984 65.8613592,203.471174 Z M75.3025151,206.281542 C74.9930474,207.284134 73.553809,207.739857 72.1039724,207.313809 C70.6562556,206.875043 69.7087748,205.700761 70.0012857,204.687571 C70.302275,203.678621 71.7478721,203.20382 73.2083069,203.659543 C74.6539041,204.09619 75.6035048,205.261994 75.3025151,206.281542 Z M86.046947,207.473627 C86.0829806,208.529209 84.8535871,209.404622 83.3316829,209.4237 C81.8013,209.457614 80.563428,208.603398 80.5464708,207.564772 C80.5464708,206.498591 81.7483088,205.631657 83.2786917,205.606221 C84.8005962,205.576546 86.046947,206.424403 86.046947,207.473627 Z M96.6021471,207.069023 C96.7844366,208.099171 95.7267341,209.156872 94.215428,209.438785 C92.7295577,209.710099 91.3539086,209.074206 91.1652603,208.052538 C90.9808515,206.996955 92.0576306,205.939253 93.5413813,205.66582 C95.054807,205.402984 96.4092596,206.021919 96.6021471,207.069023 Z"
+                      fill="#161614"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div class="content">
+                <h1>GITHUB</h1>
+                <span id="span">rrTio</span>
+              </div>
               <svg
-                viewBox="0 0 16 16"
+                class="arrow"
                 xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                stroke-linejoin="round"
-                stroke-miterlimit="1.414"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
               >
-                <path
-                  d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-
-            <div class="content">
-              <h1>Facebook</h1>
-              <span id="span">Rozs Raven Tio</span>
-            </div>
-
-            <svg
-              class="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-            >
-              <g class="nc-icon-wrapper" fill="#444444">
-                <path
-                  d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
-                ></path>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://twitter.com/RozsTio" target="_blank" class="twitter">
-            <div class="icon">
-              <svg
-                viewBox="0 0 16 16"
-                xmlns="http://www.w3.org/2000/svg"
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                stroke-linejoin="round"
-                stroke-miterlimit="1.414"
-              >
-                <path
-                  d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z"
-                  fill-rule="nonzero"
-                />
-              </svg>
-            </div>
-
-            <div class="content">
-              <h1>Twitter</h1>
-              <span id="span">@RozsTio</span>
-            </div>
-
-            <svg
-              class="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-            >
-              <g class="nc-icon-wrapper" fill="#444444">
-                <path
-                  d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
-                ></path>
-              </g>
-            </svg>
-          </a>
-
-          <a href="https://www.instagram.com/rozsraven/" target="_blank" class="instagram">
-            <div class="icon">
-              <svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                <g>
-                  <path d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z" fill="#0A0A08"></path>
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
                 </g>
               </svg>
-            </div>
-
-            <div class="content">
-              <h1>INSTAGRAM</h1>
-              <span id="span">@rozsraven</span>
-            </div>
-
-            <svg
-              class="arrow"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
+            </a>
+            <a
+              href="https://www.facebook.com/rozsAMraven/"
+              target="_blank"
+              class="facebook"
             >
-              <g class="nc-icon-wrapper" fill="#444444">
-                <path
-                  d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
-                ></path>
-              </g>
-            </svg>
-          </a>
-        </nav>
+              <div class="icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="1.414"
+                >
+                  <path
+                    d="M15.117 0H.883C.395 0 0 .395 0 .883v14.234c0 .488.395.883.883.883h7.663V9.804H6.46V7.39h2.086V5.607c0-2.066 1.262-3.19 3.106-3.19.883 0 1.642.064 1.863.094v2.16h-1.28c-1 0-1.195.48-1.195 1.18v1.54h2.39l-.31 2.42h-2.08V16h4.077c.488 0 .883-.395.883-.883V.883C16 .395 15.605 0 15.117 0"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
+
+              <div class="content">
+                <h1>Facebook</h1>
+                <span id="span">Rozs Raven Tio</span>
+              </div>
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+
+            <a
+              href="https://twitter.com/RozsTio"
+              target="_blank"
+              class="twitter"
+            >
+              <div class="icon">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  stroke-linejoin="round"
+                  stroke-miterlimit="1.414"
+                >
+                  <path
+                    d="M16 3.038c-.59.26-1.22.437-1.885.517.677-.407 1.198-1.05 1.443-1.816-.634.37-1.337.64-2.085.79-.598-.64-1.45-1.04-2.396-1.04-1.812 0-3.282 1.47-3.282 3.28 0 .26.03.51.085.75-2.728-.13-5.147-1.44-6.766-3.42C.83 2.58.67 3.14.67 3.75c0 1.14.58 2.143 1.46 2.732-.538-.017-1.045-.165-1.487-.41v.04c0 1.59 1.13 2.918 2.633 3.22-.276.074-.566.114-.865.114-.21 0-.41-.02-.61-.058.42 1.304 1.63 2.253 3.07 2.28-1.12.88-2.54 1.404-4.07 1.404-.26 0-.52-.015-.78-.045 1.46.93 3.18 1.474 5.04 1.474 6.04 0 9.34-5 9.34-9.33 0-.14 0-.28-.01-.42.64-.46 1.2-1.04 1.64-1.7z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </div>
+
+              <div class="content">
+                <h1>Twitter</h1>
+                <span id="span">@RozsTio</span>
+              </div>
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+
+            <a
+              href="https://www.instagram.com/rozsraven/"
+              target="_blank"
+              class="instagram"
+            >
+              <div class="icon">
+                <svg
+                  width="256px"
+                  height="256px"
+                  viewBox="0 0 256 256"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  preserveAspectRatio="xMidYMid"
+                >
+                  <g>
+                    <path
+                      d="M127.999746,23.06353 C162.177385,23.06353 166.225393,23.1936027 179.722476,23.8094161 C192.20235,24.3789926 198.979853,26.4642218 203.490736,28.2166477 C209.464938,30.5386501 213.729395,33.3128586 218.208268,37.7917319 C222.687141,42.2706052 225.46135,46.5350617 227.782844,52.5092638 C229.535778,57.0201472 231.621007,63.7976504 232.190584,76.277016 C232.806397,89.7746075 232.93647,93.8226147 232.93647,128.000254 C232.93647,162.177893 232.806397,166.225901 232.190584,179.722984 C231.621007,192.202858 229.535778,198.980361 227.782844,203.491244 C225.46135,209.465446 222.687141,213.729903 218.208268,218.208776 C213.729395,222.687649 209.464938,225.461858 203.490736,227.783352 C198.979853,229.536286 192.20235,231.621516 179.722476,232.191092 C166.227425,232.806905 162.179418,232.936978 127.999746,232.936978 C93.8200742,232.936978 89.772067,232.806905 76.277016,232.191092 C63.7971424,231.621516 57.0196391,229.536286 52.5092638,227.783352 C46.5345536,225.461858 42.2700971,222.687649 37.7912238,218.208776 C33.3123505,213.729903 30.538142,209.465446 28.2166477,203.491244 C26.4637138,198.980361 24.3784845,192.202858 23.808908,179.723492 C23.1930946,166.225901 23.0630219,162.177893 23.0630219,128.000254 C23.0630219,93.8226147 23.1930946,89.7746075 23.808908,76.2775241 C24.3784845,63.7976504 26.4637138,57.0201472 28.2166477,52.5092638 C30.538142,46.5350617 33.3123505,42.2706052 37.7912238,37.7917319 C42.2700971,33.3128586 46.5345536,30.5386501 52.5092638,28.2166477 C57.0196391,26.4642218 63.7971424,24.3789926 76.2765079,23.8094161 C89.7740994,23.1936027 93.8221066,23.06353 127.999746,23.06353 M127.999746,0 C93.2367791,0 88.8783247,0.147348072 75.2257637,0.770274749 C61.601148,1.39218523 52.2968794,3.55566141 44.1546281,6.72008828 C35.7374966,9.99121548 28.5992446,14.3679613 21.4833489,21.483857 C14.3674532,28.5997527 9.99070739,35.7380046 6.71958019,44.1551362 C3.55515331,52.2973875 1.39167714,61.6016561 0.769766653,75.2262718 C0.146839975,88.8783247 0,93.2372872 0,128.000254 C0,162.763221 0.146839975,167.122183 0.769766653,180.774236 C1.39167714,194.398852 3.55515331,203.703121 6.71958019,211.845372 C9.99070739,220.261995 14.3674532,227.400755 21.4833489,234.516651 C28.5992446,241.632547 35.7374966,246.009293 44.1546281,249.28042 C52.2968794,252.444847 61.601148,254.608323 75.2257637,255.230233 C88.8783247,255.85316 93.2367791,256 127.999746,256 C162.762713,256 167.121675,255.85316 180.773728,255.230233 C194.398344,254.608323 203.702613,252.444847 211.844864,249.28042 C220.261995,246.009293 227.400247,241.632547 234.516143,234.516651 C241.632039,227.400755 246.008785,220.262503 249.279912,211.845372 C252.444339,203.703121 254.607815,194.398852 255.229725,180.774236 C255.852652,167.122183 256,162.763221 256,128.000254 C256,93.2372872 255.852652,88.8783247 255.229725,75.2262718 C254.607815,61.6016561 252.444339,52.2973875 249.279912,44.1551362 C246.008785,35.7380046 241.632039,28.5997527 234.516143,21.483857 C227.400247,14.3679613 220.261995,9.99121548 211.844864,6.72008828 C203.702613,3.55566141 194.398344,1.39218523 180.773728,0.770274749 C167.121675,0.147348072 162.762713,0 127.999746,0 Z M127.999746,62.2703115 C91.698262,62.2703115 62.2698034,91.69877 62.2698034,128.000254 C62.2698034,164.301738 91.698262,193.730197 127.999746,193.730197 C164.30123,193.730197 193.729689,164.301738 193.729689,128.000254 C193.729689,91.69877 164.30123,62.2703115 127.999746,62.2703115 Z M127.999746,170.667175 C104.435741,170.667175 85.3328252,151.564259 85.3328252,128.000254 C85.3328252,104.436249 104.435741,85.3333333 127.999746,85.3333333 C151.563751,85.3333333 170.666667,104.436249 170.666667,128.000254 C170.666667,151.564259 151.563751,170.667175 127.999746,170.667175 Z M211.686338,59.6734287 C211.686338,68.1566129 204.809755,75.0337031 196.326571,75.0337031 C187.843387,75.0337031 180.966297,68.1566129 180.966297,59.6734287 C180.966297,51.1902445 187.843387,44.3136624 196.326571,44.3136624 C204.809755,44.3136624 211.686338,51.1902445 211.686338,59.6734287 Z"
+                      fill="#0A0A08"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+
+              <div class="content">
+                <h1>INSTAGRAM</h1>
+                <span id="span">@rozsraven</span>
+              </div>
+
+              <svg
+                class="arrow"
+                xmlns="http://www.w3.org/2000/svg"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+              >
+                <g class="nc-icon-wrapper" fill="#444444">
+                  <path
+                    d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </nav>
+        </div>
       </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="assets/js/contact.js"></script>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts/contact.js"></script>
-    <!--END-->
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="assets/js/aboutMe.js"></script>
   </body>
-
 </html>
