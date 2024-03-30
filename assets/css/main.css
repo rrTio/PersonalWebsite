@@ -2671,3 +2671,16 @@ p, h1, h2, h3, h4, h5, h6, a, img, ul, li, .demo-content, .text-center, .text-mu
   -ms-user-select: none;
   user-select: none;
 }
+
+#otherProjects{
+  width: 750px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #189ab4;
+  color:#000000;
+  border: 3px solid black;
+}
+
+#otherProjects:hover{
+  background-color: #09ccf3;
+}
