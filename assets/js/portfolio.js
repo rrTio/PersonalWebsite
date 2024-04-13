@@ -17,3 +17,7 @@ function psql(){
 function phpencdec(){
     window.open("https://github.com/rrTio/PHP-Encryption-Decryption", '_blank')
 }
+
+function pythonAPI(){
+    window.open("https://github.com/rrTio/Python-API", "_blank")
+}
